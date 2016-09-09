@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Package turban offers an shell experience.
+// Package turban offers a shell experience.
 package turban
 
 import (
