@@ -34,20 +34,12 @@ import (
 
 var (
 	rl        *readline.Instance
-	promptStr = "TURBAN » "
+	promptStr = "» "
 
 	// Readline Auto Completion.
-	completer = readline.NewPrefixCompleter(
-		readline.PcItem("help"),
-		readline.PcItem("exit"),
-	)
+	completer = readline.NewPrefixCompleter()
 
-	printASCIIArt = func() {
-		fmt.Println("____ _ _  ___  ___   __  _ _ ")
-		fmt.Println(" ))  ))`) ))_) ))_) /_`) )\\`)")
-		fmt.Println("((  ((_( ((`\\ ((__)(( ( ((`( ")
-		fmt.Println("")
-	}
+	printASCIIArt = func() {}
 )
 
 //##############//

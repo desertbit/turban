@@ -28,7 +28,7 @@ import (
 //#################//
 
 var (
-	helpHeader = "TURBAN - A simple shell experience"
+	helpHeader = ""
 )
 
 //##############//
@@ -67,8 +67,12 @@ func init() {
 
 			// Header.
 			printASCIIArt()
-			fmt.Printf("\n%s\n\n", helpHeader)
-			fmt.Print("Available commands:\n\n")
+
+			if len(helpHeader) > 0 {
+				fmt.Printf("\n%s\n", helpHeader)
+			}
+
+			fmt.Print("\nAvailable commands:\n\n")
 
 			// Print all available commands with a description.
 			for _, key := range keys {
