@@ -7,7 +7,18 @@ A simple shell experience.
 
 ![Turban Preview](preview.jpg "Turban")
 
-## Sample
+## Turban Application
+
+There is a turban shell application available in the cmd directory.
+It reads a TURBAN.toml file and provides a simple shell.
+
+```
+	go get -u github.com/desertbit/turban
+	go install github.com/desertbit/turban/cmd/turban
+	turban -p "prompt text" -d "path to directory"
+```
+
+## Library Sample
 
 ```go
 package main

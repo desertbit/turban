@@ -1,0 +1,29 @@
+[[cmd]]
+name  = "hello"
+help  = "Execute the hello.sh script"
+usage = "hello"
+exec  = "./hello.sh"
+
+[[cmd]]
+name  = "fail"
+help  = "Run the test script and tell it to fail"
+usage = "test"
+exec  = "./test.sh fail"
+
+[[cmd]]
+name  = "test"
+help  = "Run the test script and pass one argument"
+usage = "test [foo]"
+exec  = "./test.sh %1"
+
+[[cmd]]
+name  = "test2"
+help  = "Run the test script and pass two arguments"
+usage = "test2 [foo] [bar]"
+exec  = "./test.sh %1 %2"
+
+[[cmd]]
+name  = "read"
+help  = "Run the test script and read from stdin"
+usage = "read"
+exec  = "./test.sh read"
